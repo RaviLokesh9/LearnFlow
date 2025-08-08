@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Courses</title>
+  <link rel="stylesheet" href="css/courses.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <a href="Home.html" class="logo">LearnFlow</a>
+    </div>
+
+    <div class="nav-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search courses..." class="search-box" id="searchBox" />
+        <div id="suggestions" class="suggestions-box"></div>
+      </div>
+    </div>
+
+    <div class="profile-menu">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-icon" alt="User" />
+      <div class="dropdown-content">
+        <a href="#" id="courses">Your Courses</a>
+        <a href="#">Settings</a>
+        <a href="#">Help</a>
+        <a href="#" id="logout" onclick="logout()">Log Out</a>
+      </div>
+    </div>
+  </header>
+
+  <h1>Explore Our Courses</h1>
+
+  <section class="course-list" id="courseList">
+    <!-- Dynamically generated course cards will appear here -->
+  </section>
+
+  <script src="courses.js"></script>
+</body>
+</html>

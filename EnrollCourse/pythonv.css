@@ -1,0 +1,181 @@
+/* ---------- General Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* ---------- Header ---------- */
+  header {
+    background-color: #3b3b98;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  /* ---------- Layout Container ---------- */
+  .container {
+    display: flex;
+    height: calc(100vh - 80px);
+  }
+  
+  /* ---------- Sidebar with Video Topics ---------- */
+  .video-sidebar {
+    width: 280px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .video-sidebar ul {
+    list-style: none;
+  }
+  
+  .video-sidebar li {
+    background-color: #e3e7ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .video-sidebar li:hover {
+    background-color: #c9d1ff;
+    font-weight: bold;
+  }
+  
+  /* ---------- Main Video Section ---------- */
+  .video-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* ---------- Video Details ---------- */
+  .video-details {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .rating-comments,
+  .practice-questions {
+    flex: 1;
+  }
+  
+  /* ---------- Rating Section ---------- */
+  .rating {
+    margin: 20px 0;
+    font-size: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .rating span {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .rating span:hover,
+  .rating span.active {
+    color: #FFD700; /* gold */
+  }
+  
+  /* ---------- Comment Section ---------- */
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  #submit {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    background-color: #3b3b98;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submit:hover {
+    background-color: #2a2a7a;
+  }
+  
+  #commentList {
+    margin-top: 15px;
+  }
+  
+  .comment {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* ---------- Practice Section ---------- */
+  .practice-questions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .practice-questions h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #2c3e50;
+  }
+  
+  .practice-questions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .practice-questions ul li {
+    margin-bottom: 8px;
+  }
+  
+  .practice-questions ul li a {
+    text-decoration: none;
+    color: #3b3b98;
+    transition: 0.3s ease;
+  }
+  
+  .practice-questions ul li a:hover {
+    color: #2a2a7a;
+    text-decoration: underline;
+  }
+  

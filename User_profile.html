@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css\user_profile.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="Home.html" class="logo">LearnFlow</a>
+    </div>
+    <h1>Welcome, <span id="username">User</span> 👋</h1>
+  </header>
+
+  <main class="profile-container">
+    <section class="profile-card">
+      <img src="assets/user_icon.png" alt="User Profile Picture" class="profile-pic">
+      <div class="profile-info">
+        <h2>Satyam</h2>
+        <p>Email: dummy@example.com</p>
+        <p>Bio: Passionate learner exploring full stack development, data science and more.</p>
+      </div>
+    </section>
+
+    <section class="courses-section">
+      <h2>📚 Enrolled Courses</h2>
+      <div class="courses-grid">
+        <div class="course-box">
+          <img src="assets/ADSA.jpg" alt="DSA">
+          <p>Data Structures & Algorithms</p>
+        </div>
+        <div class="course-box">
+          <img src="assets/python.jpg" alt="Python">
+          <p>Python for Beginners</p>
+        </div>
+        <div class="course-box">
+          <img src="assets/webdev.jpg" alt="Web Dev">
+          <p>Full Stack Web Development</p>
+        </div>
+        <div class="course-box">
+          <img src="assets/ML.jpg" alt="Data Science">
+          <p>Data Science</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+
+      document.getElementById('username').textContent = 'Satyam';
+
+  </script>
+</body>
+</html>

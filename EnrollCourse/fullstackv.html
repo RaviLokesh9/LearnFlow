@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Web Development</title>
+  <link rel="stylesheet" href="fullstackv.css" />
+</head>
+<body>
+  <header>
+    <h1>Full Stack Web Development</h1>
+  </header>
+
+  <main class="container">
+    <aside class="video-sidebar">
+      <ul id="videoList"></ul>
+    </aside>
+
+    <section class="video-section">
+      <div class="video-player">
+        <iframe id="mainVideo" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video-details">
+        <div class="rating-comments">
+          <h3>Rate this video:</h3>
+          <div class="rating">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+
+          <h3>Comments:</h3>
+          <textarea placeholder="Leave a comment..."></textarea>
+          <button id="submit">Submit</button>
+        </div>
+
+        <div class="practice-questions">
+          <h3>Practice Projects & Resources:</h3>
+          <ul>
+            <li><a href="https://frontendmentor.io" target="_blank">Frontend Mentor</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+            <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+            <li><a href="https://github.com/" target="_blank">GitHub Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="fullstackv.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Science - Video Lectures</title>
+  <link rel="stylesheet" href="datasciencev.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <a href="../Home.html" class="logo">LearnFlow</a>
+    </div>
+
+    <h2>📺 Data Science Lectures</h2>
+    <div class="video-topic active" onclick="loadVideo(0)">1. Introduction to Data Science</div>
+    <div class="video-topic" onclick="loadVideo(1)">2. Python for Data Science</div>
+    <div class="video-topic" onclick="loadVideo(2)">3. Data Wrangling</div>
+    <div class="video-topic" onclick="loadVideo(3)">4. Exploratory Data Analysis</div>
+    <div class="video-topic" onclick="loadVideo(4)">5. Data Visualization</div>
+    <div class="video-topic" onclick="loadVideo(5)">6. Probability & Statistics</div>
+    <div class="video-topic" onclick="loadVideo(6)">7. Introduction to Machine Learning</div>
+    <div class="video-topic" onclick="loadVideo(7)">8. Supervised Learning</div>
+    <div class="video-topic" onclick="loadVideo(8)">9. Unsupervised Learning</div>
+    <div class="video-topic" onclick="loadVideo(9)">10. Feature Engineering</div>
+    <div class="video-topic" onclick="loadVideo(10)">11. Model Evaluation</div>
+    <div class="video-topic" onclick="loadVideo(11)">12. Deep Learning Basics</div>
+    <div class="video-topic" onclick="loadVideo(12)">13. NLP Basics</div>
+    <div class="video-topic" onclick="loadVideo(13)">14. Project Pipeline</div>
+    <div class="video-topic" onclick="loadVideo(14)">15. Capstone Overview</div>
+  </div>
+
+  <div class="main">
+    <div class="video-container">
+      <iframe id="videoPlayer" src="https://www.youtube.com/embed/X3paOmcrTjQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-description">
+      <h3 id="videoTitle">1. Introduction to Data Science</h3>
+      <p id="videoDesc">This video gives an overview of what Data Science is and why it’s important.</p>
+      <p class="rating">⭐ 4.8 / 5</p>
+    </div>
+
+    <div class="comment-box">
+      <h4>💬 Comments</h4>
+      <textarea placeholder="Leave a comment..."></textarea>
+      <button onclick="submitComment()">Submit</button>
+      <ul id="commentList"></ul>
+    </div>
+
+    <div class="practice-questions">
+      <h4>📝 Practice Questions</h4>
+      <ul>
+        <li><a href="https://www.kaggle.com/learn/intro-to-data-science" target="_blank">Intro to Data Science – Kaggle</a></li>
+        <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-statistics" target="_blank">10 Days of Statistics – HackerRank</a></li>
+        <li><a href="https://www.geeksforgeeks.org/data-science-practice-questions/" target="_blank">Data Science Practice – GeeksforGeeks</a></li>
+        <li><a href="https://leetcode.com/problemset/all/?topicSlugs=data-science" target="_blank">Data Science Problems – LeetCode</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="datasciencev.js"></script>
+</body>
+</html>

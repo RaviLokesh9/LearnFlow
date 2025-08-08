@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LearnFlow</title>
+  <link rel="stylesheet" href="css/home.css"/>
+  <script src="home.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="Home.html" class="logo">LearnFlow</a>
+    </div>
+    <div class="nav-actions">
+        <div class="search-container">
+            <input type="text" placeholder="Search courses..." class="search-box" id="searchBox" />
+            <div id="suggestions" class="suggestions-box">
+              <!-- Default suggestions (with icons) will go here -->
+            </div>
+          </div>
+      <div class="dropdown">
+        <button class="btn" onclick="window.location.href='sign.html'">Sign In / Sign Up</button>
+        <!-- <div class="dropdown-content">
+          <a href="sign_in.html">Sign In</a>
+          <a href="sign_up.html">Sign Up</a>
+        </div> -->
+      </div>
+      <div class="profile-menu">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-icon" alt="User" />
+        <div class="dropdown-content">
+          <a href="#" id="courses" onclick="window.location.href='user_profile.html'">Your Courses</a>
+          <a href="#">Settings</a>
+          <a href="#">Help</a>
+          <a href="#" id ="logout" onclick="logout()">Log Out</a>
+        </div>
+      </div>
+      <p class="username" >Welcome </p>
+      <div class="resources">
+        <button onclick="window.location.href='resource.html'">📚 Resources</button>
+      </div>      
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Start Learning with our <span id="dynamic-text">POWERFUL</span> Courses</h1>
+      <p>Explore job-ready, high-tech courses that empower your future.</p>
+      <a href="courses.html" class="explore-btn">Explore Courses</a>
+    </div>
+    <div class="hero-images">
+      <img src="https://img.icons8.com/clouds/100/code.png" class="course-img" alt="Course 1"/>
+      <img src="https://img.icons8.com/clouds/100/python.png" class="course-img" alt="Course 2"/>
+      <img src="https://img.icons8.com/external-smashingstocks-circular-smashing-stocks/65/external-Data-Science-data-and-network-smashingstocks-circular-smashing-stocks.png" class="course-img" alt="Data Science Course"/>
+    </div>
+  </section>
+
+  <section class="popular-courses">
+    <h2>Popular Courses</h2>
+    <div class="courses">
+      <div onclick="window.location.href='fullstackwebdevelopment.html'" class="course-card">
+        <img src="assets/webdev.jpg" alt="Web Dev" />
+        <p>Full Stack Web Development</p>
+      </div>
+      <div onclick="window.location.href='pythonforbeginners.html'" class="course-card">
+        <img src="assets/python.jpg" alt="Python" />
+        <p>Python for Beginners</p>
+      </div>
+      <div onclick="window.location.href='datascience.html'" class="course-card">
+        <img src="assets/ADSA.jpg" alt="Data Science" />
+        <p>Data Science</p>
+      </div>
+      <div class="course-card">
+        <img src="assets/graphicdesign.png" alt="Graphic Design" />
+        <p>Graphic Designing</p>
+      </div>
+      <div class="course-card">
+        <img src="assets/ML.jpg" alt="Machine Learning" />
+        <p>Machine Learning</p>
+      </div>
+      
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Our Platform</h2>
+        <p>
+          Our mission is to empower students, developers, and working professionals by providing 
+          them access to world-class courses. We focus on real-world skills in fields like 
+          software development, AI & ML, data science, design, and business.
+        </p>
+        <p>
+          Whether you're starting your journey or looking to upgrade your skill set, 
+          our expertly curated content, industry mentors, and hands-on projects will help 
+          you achieve your goals. Join a vibrant learning community where innovation meets education.
+        </p>
+      </div>
+      <div class="about-images">
+        <img src="assets/Learning.jpg" alt="Learning" />
+        <img src="assets/teamwork.jpg" alt="Team Collaboration" />
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">Experience Portal</a></li>
+          <li><a href="#">Hall of Fame</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Become an affiliate</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>📧 dummymail.com</p>
+        <p>📞 +91 9550178788</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="LinkedIn"/></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/youtube-play.png" alt="YouTube"/></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/telegram-app.png" alt="Telegram"/></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <img src="https://img.icons8.com/ios/80/iso.png" alt="ISO Certified">
+      <p>© 2025 EduPlatform — All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
